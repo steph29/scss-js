@@ -1,0 +1,217 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7)) no-repeat;
+  background: linear-gradient(to bottom, #af67e9, #6565e7) no-repeat;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  background-color: white;
+  font-size: 12px;
+  border-radius: 30px;
+  max-height: 500px;
+  margin: 15%;
+  vertical-align: middle;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(500, auto);
+}
+
+.container {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: 500px;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper .pattern {
+  position: absolute;
+  top: -12rem;
+  left: -33rem;
+  margin-top: -20%;
+  height: 57rem;
+}
+
+.wrapper .woman {
+  position: absolute;
+  top: 2rem;
+  left: -4rem;
+}
+
+.box-desktop {
+  position: absolute;
+  z-index: 1;
+  top: 11rem;
+  left: -5.5rem;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+.section {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 2;
+  grid-column: 2;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1d1e35;
+}
+
+.section .question {
+  color: #4a4b5e;
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.section .question h3,
+.section .question img {
+  display: inline;
+}
+
+.section .question h3 {
+  color: #787887;
+  font-weight: 400;
+}
+
+.section .question img {
+  float: right;
+}
+
+.section .res {
+  color: #787887;
+  opacity: 0.7;
+  font-weight: 400;
+  display: none;
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(25%, #af67e9), color-stop(99%, #6565e7));
+    background: linear-gradient(to bottom, #af67e9 25%, #6565e7 99%);
+  }
+  .card {
+    margin: 25px;
+    margin-top: 10%;
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    top: 6rem;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: minmax(5, auto);
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .container {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+  }
+  .container .wrapper {
+    display: none;
+  }
+  .container .box-desktop {
+    display: none;
+  }
+  .container .mobile-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+  .container .mobile-wrapper .woman-mobile {
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: -6.5rem;
+    left: -2rem;
+  }
+  .section {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    padding: 1.5rem;
+  }
+  .section h1 {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
