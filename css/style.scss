@@ -18,8 +18,9 @@ html {
   background: linear-gradient(to bottom, $violet, $blue) no-repeat;
 }
 body {
-  height: 100%;
   width: 100%;
+  height: 99%;
+  overflow: hidden;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -31,7 +32,9 @@ body {
   font-size: $fs;
   border-radius: 30px;
   max-height: 500px;
-  margin: 15%;
+  margin: auto;
+  padding: auto;
+  margin-top: 15%;
   vertical-align: middle;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -102,9 +105,26 @@ body {
   .question img {
     display: inline;
   }
+
   .question h3 {
     color: $darkGrayishBlue;
     font-weight: 400;
+    a {
+      color: $darkGrayishBlue;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $softRed;
+    }
+    a:active {
+      color: $veryDarkGrayishBlue;
+      font-weight: 700;
+      @if (a: active) {
+        .res {
+          display: block;
+        }
+      }
+    }
   }
   .question img {
     float: right;
@@ -116,10 +136,13 @@ body {
     display: none;
   }
 }
+.attribution {
+}
+
+// RESPONSIVE
 @media screen and (max-width: 991px) {
   body {
     box-sizing: border-box;
-    // height: 1000px;
     background: linear-gradient(to bottom, $violet 25%, $blue 99%);
   }
   .card {

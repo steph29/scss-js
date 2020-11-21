@@ -7,8 +7,9 @@ html {
 }
 
 body {
-  height: 100%;
   width: 100%;
+  height: 99%;
+  overflow: hidden;
   max-width: 1440px;
   margin-right: auto;
   margin-left: auto;
@@ -22,7 +23,9 @@ body {
   font-size: 12px;
   border-radius: 30px;
   max-height: 500px;
-  margin: 15%;
+  margin: auto;
+  padding: auto;
+  margin-top: 15%;
   vertical-align: middle;
   display: -ms-grid;
   display: grid;
@@ -129,6 +132,24 @@ body {
 .section .question h3 {
   color: #787887;
   font-weight: 400;
+}
+
+.section .question h3 a {
+  color: #787887;
+  text-decoration: none;
+}
+
+.section .question h3 a:hover {
+  color: #f47c57;
+}
+
+.section .question h3 a:active {
+  color: #4a4b5e;
+  font-weight: 700;
+}
+
+.section .question h3 a:active .res {
+  display: block;
 }
 
 .section .question img {
