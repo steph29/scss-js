@@ -5,13 +5,3 @@
   -webkit-transform: $transform;
   transform: $transform;
 }
-
-@mixin effetOveflow($enfant) {
-  @if ($enfant != "box-desktop") {
-    &:has(.container) {
-      overflow: hidden;
-    }
-  } @else {
-    overflow: visible;
-  }
-}
